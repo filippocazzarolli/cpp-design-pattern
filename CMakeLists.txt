@@ -16,7 +16,19 @@ add_library(
         creation/builder/es3/personBuilder.cpp
 )
 
+add_library(
+        creation_factory STATIC
+        creation/factory/main.cpp
+        creation/factory/method/point.cpp
+        creation/factory/friend-class/point.cpp
+        creation/factory/inner-class/point.cpp
+        creation/factory/abstract/hotDrink.hpp
+        creation/factory/abstract/drinkFactory.hpp
+        creation/factory/abstract/hotDrinkFactory.hpp
+)
+
 
 add_executable(cpp_design_pattern main.cpp)
 
 target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
+target_link_libraries(cpp_design_pattern PRIVATE creation_factory)
