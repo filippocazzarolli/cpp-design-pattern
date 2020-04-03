@@ -27,8 +27,21 @@ add_library(
         creation/factory/abstract/hotDrinkFactory.hpp
 )
 
+add_library(
+        creation_prototype STATIC
+        creation/prototype/main.cpp
+)
+
+add_library(
+        creation_singleton STATIC
+        creation/singleton/main.cpp
+        creation/singleton/singletonClass.cpp
+)
+
 
 add_executable(cpp_design_pattern main.cpp)
 
 target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
 target_link_libraries(cpp_design_pattern PRIVATE creation_factory)
+target_link_libraries(cpp_design_pattern PRIVATE creation_prototype)
+target_link_libraries(cpp_design_pattern PRIVATE creation_singleton)
