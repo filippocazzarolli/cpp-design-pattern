@@ -38,6 +38,13 @@ add_library(
         creation/singleton/singletonClass.cpp
 )
 
+add_library(
+        structure_adapter STATIC
+        structure/adapter/main.cpp
+        structure/adapter/simple.cpp
+        structure/adapter/polymorphism.cpp
+)
+
 
 add_executable(cpp_design_pattern main.cpp)
 
@@ -45,3 +52,4 @@ target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
 target_link_libraries(cpp_design_pattern PRIVATE creation_factory)
 target_link_libraries(cpp_design_pattern PRIVATE creation_prototype)
 target_link_libraries(cpp_design_pattern PRIVATE creation_singleton)
+target_link_libraries(cpp_design_pattern PRIVATE structure_adapter)
