@@ -45,6 +45,12 @@ add_library(
         structure/adapter/polymorphism.cpp
 )
 
+add_library(
+        structure_bridge STATIC
+        structure/bridge/main.cpp
+        structure/bridge/es1.cpp
+)
+
 
 add_executable(cpp_design_pattern main.cpp)
 
