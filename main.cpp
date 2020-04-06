@@ -5,6 +5,7 @@
 #include "creation/singleton/main.cpp"
 #include "structure/adapter/main.cpp"
 #include "structure/bridge/main.cpp"
+#include "structure/composite/main.cpp"
 
 int main() {
 
@@ -13,7 +14,8 @@ int main() {
 //    CppDesignPattern::Creation::Prototype::main();
 //    CppDesignPattern::Creation::Singleton::main();
 //    CppDesignPattern::Structure::Adapter::main();
-    CppDesignPattern::Structure::Bridge::main();
+//    CppDesignPattern::Structure::Bridge::main();
+    CppDesignPattern::Structure::Composite::main();
 
     return 0;
 }

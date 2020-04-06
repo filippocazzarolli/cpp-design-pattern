@@ -51,6 +51,11 @@ add_library(
         structure/bridge/es1.cpp
 )
 
+add_library(
+        structure_composite STATIC
+        structure/composite/main.cpp
+        structure/composite/es1.cpp
+)
 
 add_executable(cpp_design_pattern main.cpp)
 
