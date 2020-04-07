@@ -58,6 +58,15 @@ add_library(
 )
 
 add_library(
+        structure_decorator STATIC
+        structure/decorator/main.cpp
+        structure/decorator/dynamic.cpp
+        structure/decorator/static.cpp
+        structure/decorator/pointer.cpp
+        structure/decorator/function.cpp
+)
+
+add_library(
         structure_facade STATIC
         structure/facade/main.cpp
         structure/facade/es1.cpp
@@ -70,4 +79,5 @@ target_link_libraries(cpp_design_pattern PRIVATE creation_factory)
 target_link_libraries(cpp_design_pattern PRIVATE creation_prototype)
 target_link_libraries(cpp_design_pattern PRIVATE creation_singleton)
 target_link_libraries(cpp_design_pattern PRIVATE structure_adapter)
+target_link_libraries(cpp_design_pattern PRIVATE structure_decorator)
 target_link_libraries(cpp_design_pattern PRIVATE structure_facade)
