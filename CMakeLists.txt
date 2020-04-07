@@ -57,6 +57,12 @@ add_library(
         structure/composite/es1.cpp
 )
 
+add_library(
+        structure_facade STATIC
+        structure/facade/main.cpp
+        structure/facade/es1.cpp
+)
+
 add_executable(cpp_design_pattern main.cpp)
 
 target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
@@ -64,3 +70,4 @@ target_link_libraries(cpp_design_pattern PRIVATE creation_factory)
 target_link_libraries(cpp_design_pattern PRIVATE creation_prototype)
 target_link_libraries(cpp_design_pattern PRIVATE creation_singleton)
 target_link_libraries(cpp_design_pattern PRIVATE structure_adapter)
+target_link_libraries(cpp_design_pattern PRIVATE structure_facade)
