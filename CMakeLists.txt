@@ -72,6 +72,13 @@ add_library(
         structure/facade/es1.cpp
 )
 
+add_library(
+        structure_flyweight STATIC
+        structure/flyweight/main.cpp
+        structure/flyweight/es1.cpp
+        structure/flyweight/es2.cpp
+)
+
 add_executable(cpp_design_pattern main.cpp)
 
 target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
@@ -81,3 +88,4 @@ target_link_libraries(cpp_design_pattern PRIVATE creation_singleton)
 target_link_libraries(cpp_design_pattern PRIVATE structure_adapter)
 target_link_libraries(cpp_design_pattern PRIVATE structure_decorator)
 target_link_libraries(cpp_design_pattern PRIVATE structure_facade)
+target_link_libraries(cpp_design_pattern PRIVATE structure_flyweight)
