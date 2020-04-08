@@ -79,6 +79,13 @@ add_library(
         structure/flyweight/es2.cpp
 )
 
+add_library(
+        structure_proxy STATIC
+        structure/proxy/main.cpp
+        structure/proxy/property.cpp
+        structure/proxy/virtual.cpp
+)
+
 add_executable(cpp_design_pattern main.cpp)
 
 target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
@@ -89,3 +96,4 @@ target_link_libraries(cpp_design_pattern PRIVATE structure_adapter)
 target_link_libraries(cpp_design_pattern PRIVATE structure_decorator)
 target_link_libraries(cpp_design_pattern PRIVATE structure_facade)
 target_link_libraries(cpp_design_pattern PRIVATE structure_flyweight)
+target_link_libraries(cpp_design_pattern PRIVATE structure_proxy)

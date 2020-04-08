@@ -9,6 +9,7 @@
 #include "structure/decorator/main.cpp"
 #include "structure/facade/main.cpp"
 #include "structure/flyweight/main.cpp"
+#include "structure/proxy/main.cpp"
 
 int main() {
 
@@ -21,7 +22,8 @@ int main() {
 //    CppDesignPattern::Structure::Composite::main();
 //    CppDesignPattern::Structure::Decorator::main();
 //    CppDesignPattern::Structure::Facade::main();
-    CppDesignPattern::Structure::Flyweight::main();
+//    CppDesignPattern::Structure::Flyweight::main();
+    CppDesignPattern::Structure::Proxy::main();
 
     return 0;
 }
