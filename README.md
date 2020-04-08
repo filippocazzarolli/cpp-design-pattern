@@ -17,20 +17,20 @@ dà vita a un framework.
 **Pattern creazionali**,
 I pattern creazionali risolvono problematiche inerenti l'istanziazione degli oggetti.
 
-- **Builder** separa la costruzione di un oggetto complesso dalla sua rappresentazione.
-- **Factory** fornisce un'interfaccia per creare un oggetto, ma lascia che le sottoclassi decidano quale oggetto istanziare.
-- **Prototype** permette di creare nuovi oggetti clonando un oggetto iniziale, o prototipo.
-- **Singleton** ha lo scopo di assicurare che di una classe possa essere creata una sola istanza in sistemi con un unico thread.
+- **Builder:** quando la costruzione di un oggetto è particolarmente complicata.
+- **Factory:** fornisce un'interfaccia per creare un oggetto, ma lascia che le sottoclassi decidano quale oggetto istanziare.
+- **Prototype:** quando è più semplice copiare un oggetto esistente che inizializzarne uno completamente nuovo.
+- **Singleton:** ha lo scopo di assicurare che di una classe possa essere creata una sola istanza in sistemi con un unico thread.
 
 **Pattern strutturali**, I pattern strutturali risolvono problematiche inerenti la struttura delle classi e degli oggetti
 
-- **Adapter** converte l'interfaccia di una classe in una interfaccia diversa.
-- **Bridge** permette di separare l'astrazione di una classe dalla sua implementazione, per permettere loro di variare indipendentemente.
-- **Composite** utilizzato per dare la possibilità all'utilizzatore di manipolare gli oggetti in modo uniforme, organizza gli oggetti in una struttura ad albero.
-- **Decorator** consente di aggiungere metodi a classi esistenti durante il run-time (cioè durante lo svolgimento del programma), permettendo una maggior flessibilità nell'aggiungere delle funzionalità agli oggetti.
-- **Façade** permette, attraverso un'interfaccia più semplice, l'accesso a sottosistemi che espongono interfacce complesse e diverse tra loro.
-- **Flyweight** permette di separare la parte variabile di una classe dalla parte che può essere riutilizzata.
-- **Proxy** fornisce una rappresentazione di un oggetto di accesso difficile o che richiede un tempo importante per l'accesso o creazione. Il Proxy consente di posticipare l'accesso o creazione al momento in cui sia davvero richiesto.
+- **Adapter:** ottenere l'interfaccia desiderata da interfaccia esistente.
+- **Bridge:** collega i componenti tra loro attraverso classi asttratte.
+- **Composite:** tratta oggetti e aggragati, dell'oggetto stesso, in modo uniforme.
+- **Decorator** aggiunge funzionalità senza alterare la classe.
+- **Façade:** Esporre più componenti attraverso un'unica interfaccia
+- **Flyweight:** Ottimiza lo spazio occupato.
+- **Proxy:** Un interfaccia per accedere ad una particolare risorsa.
 
 **Pattern comportamentali**, I pattern comportamentali forniscono soluzione alle più comuni tipologie di interazione tra gli oggetti.
 
