@@ -100,6 +100,12 @@ add_library(
         behavior/command/macro.cpp
 )
 
+add_library(
+        behavior_interpreter STATIC
+        behavior/interpreter/main.cpp
+        behavior/interpreter/simple.cpp
+)
+
 add_executable(cpp_design_pattern main.cpp)
 
 target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
@@ -113,3 +119,4 @@ target_link_libraries(cpp_design_pattern PRIVATE structure_flyweight)
 target_link_libraries(cpp_design_pattern PRIVATE structure_proxy)
 target_link_libraries(cpp_design_pattern PRIVATE behavior_chain_of_responsibility)
 target_link_libraries(cpp_design_pattern PRIVATE behavior_command)
+target_link_libraries(cpp_design_pattern PRIVATE behavior_interpreter)

@@ -12,6 +12,7 @@
 #include "structure/proxy/main.cpp"
 #include "behavior/chain-of-responsibility/main.cpp"
 #include "behavior/command/main.cpp"
+#include "behavior/interpreter/main.cpp"
 
 int main() {
 
@@ -29,7 +30,8 @@ int main() {
 //    CppDesignPattern::Structure::Proxy::main();
 
 //    CppDesignPattern::Behavior::ChainOfResponsibility::main();
-    CppDesignPattern::Behavior::Command::main();
+//    CppDesignPattern::Behavior::Command::main();
+    CppDesignPattern::Behavior::Interpreter::main();
 
     return 0;
 }
