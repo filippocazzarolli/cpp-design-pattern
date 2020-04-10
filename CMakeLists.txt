@@ -86,6 +86,20 @@ add_library(
         structure/proxy/virtual.cpp
 )
 
+add_library(
+        behavior_chain_of_responsibility STATIC
+        behavior/chain-of-responsibility/main.cpp
+        behavior/chain-of-responsibility/es1.cpp
+)
+
+add_library(
+        behavior_command STATIC
+        behavior/command/main.cpp
+        behavior/command/simple.cpp
+        behavior/command/undo.cpp
+        behavior/command/macro.cpp
+)
+
 add_executable(cpp_design_pattern main.cpp)
 
 target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
@@ -97,3 +111,5 @@ target_link_libraries(cpp_design_pattern PRIVATE structure_decorator)
 target_link_libraries(cpp_design_pattern PRIVATE structure_facade)
 target_link_libraries(cpp_design_pattern PRIVATE structure_flyweight)
 target_link_libraries(cpp_design_pattern PRIVATE structure_proxy)
+target_link_libraries(cpp_design_pattern PRIVATE behavior_chain_of_responsibility)
+target_link_libraries(cpp_design_pattern PRIVATE behavior_command)

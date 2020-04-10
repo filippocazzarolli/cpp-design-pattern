@@ -10,6 +10,8 @@
 #include "structure/facade/main.cpp"
 #include "structure/flyweight/main.cpp"
 #include "structure/proxy/main.cpp"
+#include "behavior/chain-of-responsibility/main.cpp"
+#include "behavior/command/main.cpp"
 
 int main() {
 
@@ -17,13 +19,17 @@ int main() {
 //    CppDesignPattern::Creation::Factory::main();
 //    CppDesignPattern::Creation::Prototype::main();
 //    CppDesignPattern::Creation::Singleton::main();
+
 //    CppDesignPattern::Structure::Adapter::main();
 //    CppDesignPattern::Structure::Bridge::main();
 //    CppDesignPattern::Structure::Composite::main();
 //    CppDesignPattern::Structure::Decorator::main();
 //    CppDesignPattern::Structure::Facade::main();
 //    CppDesignPattern::Structure::Flyweight::main();
-    CppDesignPattern::Structure::Proxy::main();
+//    CppDesignPattern::Structure::Proxy::main();
+
+//    CppDesignPattern::Behavior::ChainOfResponsibility::main();
+    CppDesignPattern::Behavior::Command::main();
 
     return 0;
 }
