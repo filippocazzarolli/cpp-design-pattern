@@ -106,6 +106,15 @@ add_library(
         behavior/interpreter/simple.cpp
 )
 
+add_library(
+        behavior_observer STATIC
+        behavior/observer/main.cpp
+        behavior/observer/console-person-observer.cpp
+        behavior/observer/person.cpp
+        behavior/observer/observable.cpp
+        behavior/observer/observer.cpp
+)
+
 add_executable(cpp_design_pattern main.cpp)
 
 target_link_libraries(cpp_design_pattern PRIVATE creation_builder)
@@ -120,3 +129,5 @@ target_link_libraries(cpp_design_pattern PRIVATE structure_proxy)
 target_link_libraries(cpp_design_pattern PRIVATE behavior_chain_of_responsibility)
 target_link_libraries(cpp_design_pattern PRIVATE behavior_command)
 target_link_libraries(cpp_design_pattern PRIVATE behavior_interpreter)
+
+target_link_libraries(cpp_design_pattern PRIVATE behavior_observer)

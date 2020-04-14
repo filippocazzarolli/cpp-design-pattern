@@ -14,6 +14,8 @@
 #include "behavior/command/main.cpp"
 #include "behavior/interpreter/main.cpp"
 
+#include "behavior/observer/main.cpp"
+
 int main() {
 
 //    CppDesignPattern::Creation::Builder::main();
@@ -31,7 +33,9 @@ int main() {
 
 //    CppDesignPattern::Behavior::ChainOfResponsibility::main();
 //    CppDesignPattern::Behavior::Command::main();
-    CppDesignPattern::Behavior::Interpreter::main();
+//    CppDesignPattern::Behavior::Interpreter::main();
+
+    CppDesignPattern::Behavior::Observer::main();
 
     return 0;
 }
