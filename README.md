@@ -38,9 +38,9 @@ I pattern creazionali risolvono problematiche inerenti l'istanziazione degli ogg
 - **Command:** permette di isolare la porzione di codice che effettua un'azione (eventualmente molto complessa) dal codice che ne richiede l'esecuzione; l'azione è incapsulata nell'oggetto Command.
 - **Interpreter:** (parser) definisce una rappresentazione della sua grammatica insieme ad un interprete che utilizza questa rappresentazione per l'interpretazione delle espressioni in quel determinato linguaggio.
 - **Iterator:** risolve diversi problemi connessi all'accesso e alla navigazione attraverso gli elementi di una struttura dati, senza esporre i dettagli dell'implementazione e della struttura interna del contenitore.
-- **Mediator:** si interpone nelle comunicazioni tra oggetti, allo scopo di aggiornare lo stato del sistema quando uno qualunque di essi comunica un cambiamento del proprio stato.
+- **Mediator:** facilita la comunicazione tra i componenti (media la comunizione vedi moderatore di chat).
 - **Memento:** è l'operazione di estrarre lo stato interno di un oggetto, senza violarne l'incapsulazione, e memorizzarlo per poterlo ripristinare in un momento successivo.
-- **Observer** definisce una dipendenza uno a molti fra oggetti diversi, in maniera tale che se un oggetto cambia il suo stato, tutti gli oggetti dipendenti vengono notificati del cambiamento avvenuto e possono aggiornarsi.
+- **Observer** ricevere una notifica quando succede qualcosa.
 - **State:** permette ad un oggetto di cambiare il suo comportamento al cambiare di un suo stato interno.
 - **Strategy:** è utile in quelle situazioni dove è necessario modificare dinamicamente gli algoritmi utilizzati da un'applicazione.
 - **Visitor:** permette di separare un algoritmo dalla struttura di oggetti composti a cui è applicato, in modo da poter aggiungere nuovi comportamenti senza dover modificare la struttura stessa.
